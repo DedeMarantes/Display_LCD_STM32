@@ -35,7 +35,7 @@ void lcd_send_cmd(char cmd) {
 void lcd_send_data(char data){
 	char data_upper, data_lower;
 	uint8_t data_transmit[4];
-	data_upper = (data & 0xF0);//pegar 4 bits mais significativos de cmd
+	data_upper = (data & 0xF0);//pegar 4 bits mais significativos de data
 	data_lower = ((data << 4) & 0xF0);//pegar 4 bits menos significativos
 	//cmd HHHHLLLL separar para data_h = HHHH0000 e data_l = LLLL0000
 	//comandos enviados dado 8 bits, separar em 2 partes, tem que ser 4 mais significativo
