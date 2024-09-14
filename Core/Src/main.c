@@ -33,12 +33,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define MODULE_ADDR 0x27 << 1  //endereço slave I2C
-#define FUNCTION_SET 0x28  //DL=0(4-bit) N=1(2 lines) F=0(5x8 5 linhas 8 colunas)
-#define DISPLAY_OFF 0x08  //D=0 Display off C=0 cursor off B=0 blinking off
-#define DISPLAY_ON 0x0C  //D=1 Display on
-#define CLR_DISPLAY 0x01  //Clear display
-#define INC_CURSOR 0x06  //Entry mode set Increment e no shift
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
